@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+group 'ru.levry.dbc'
+description 'db scripting'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.0.0-M4'
+    testCompile 'com.h2database:h2:1.4.195'
+}
