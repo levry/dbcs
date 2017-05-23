@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+group 'ru.levry.dbc'
+description = 'Db integration in Dropwizard'
+version = '0.0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':dbc')
+
+    compile 'io.dropwizard:dropwizard-core:1.1.0'
+    compile 'io.dropwizard:dropwizard-jdbi:1.1.0'
+
+    runtime 'com.h2database:h2:1.4.195'
+}

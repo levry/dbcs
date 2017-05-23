@@ -4,7 +4,7 @@ apply plugin: 'idea'
 
 group 'ru.levry.dbc'
 description 'db scripting'
-version '1.0-SNAPSHOT'
+version '0.0.1'
 
 sourceCompatibility = 1.8
 
