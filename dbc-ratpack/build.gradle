@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'io.ratpack:ratpack-gradle:1.4.5'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'io.ratpack.ratpack-java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+group 'ru.levry.dbc'
+description 'Db in ratpack'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile project(':dbc')
+
+    compile ratpack.dependency('guice')
+    compile ratpack.dependency('hikari')
+
+    runtime 'ch.qos.logback:logback-classic:1.2.3'
+    runtime 'com.h2database:h2:1.4.195'
+}

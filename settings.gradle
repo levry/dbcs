@@ -1,4 +1,6 @@
 rootProject.name = 'dbcs'
 
-include 'dbc', 'dbc-boot'
+include 'dbc'
+include 'dbc-boot'
 include 'dbc-dw'
+include 'dbc-ratpack'
