@@ -1,4 +1,4 @@
-package ru.levry.dbc.ratpack;
+package ru.levry.dbc;
 
 /**
  * @author levry
