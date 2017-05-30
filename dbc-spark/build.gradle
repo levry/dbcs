@@ -1,0 +1,23 @@
+group 'ru.levry.dbc'
+description 'Db in sparkjava'
+version '0.0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile project(':dbc')
+
+    compile 'com.sparkjava:spark-core:2.6.0'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.8'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.8'
+    compile 'com.zaxxer:HikariCP:2.6.2'
+
+    runtime 'ch.qos.logback:logback-classic:1.2.3'
+    runtime 'com.h2database:h2:1.4.195'
+}

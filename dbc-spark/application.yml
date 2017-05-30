@@ -1,0 +1,4 @@
+database:
+  driverClass: org.h2.Driver
+  url: jdbc:h2:../data/users;DB_CLOSE_ON_EXIT=FALSE;IFEXISTS=TRUE;IGNORECASE=TRUE;
+  username: admin
